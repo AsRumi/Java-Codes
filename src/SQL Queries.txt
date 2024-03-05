@@ -1,0 +1,49 @@
+When you select data from a database conditionally, you are creating 'views' for that database.
+How do you select data from a database?
+
+>> select * from player;
+
+Here, player is the table name and * selects all the attributes from the player table.
+
+>> select player_name, goals_scored from player;
+
+The above statement only selects specified 2 attributes from the player table.
+
+>> select player_name as 'FULL NAME', goals_scored as 'GOALS SCORED' from player;
+
+The above statement only selects specified 2 attributes from the player table and changes the alias when displaying the view.
+
+>> select * from player where player_name == 'Aaron';
+
+Above statement matches and selects only those players that have a name match.
+
+>> select * from player where player_name like 'Aaron%';
+
+Above statement only selects those players that have Aaron in the beginning of their name. You can use the % symbol anywhere and it will fill that part up with any characters.
+
+>> select * from player where player_name like 'T_m%';
+
+Above statement selects all players whose name has a capital T, followed by any single character, followed by a small m, followed by any number of characters.
+
+>> select * from player where player_name in ('Christiano Ronaldo', 'Lionel Messi');
+
+Above statement compares the player_name for exact match with the values passed.
+
+>> select * from player where player_weight between 180 and 200;
+
+>> select * from matches where home_player_1 is null;
+
+Returns those records for which the value in the column was null.
+
+>> select * from matches where home_player_1 is not null;
+
+Returns those records for which the value in the column is not null.
+
+>> select * from player order by weight;
+
+The above statement sorts the entire table by weight in ascending order and creates a view.
+
+>> select * from player order by weight desc;
+
+The above statement now sorts the entire table by weight in descending order and creates a view.
+
