@@ -34,6 +34,9 @@ public class ArrayLists {
 
         System.out.println(list);
 
+        // You can also add multiple items to the array at once using the Collections and addAll function.
+        Collections.addAll(list, 1, 2, 3, 4, 5);
+
         // Getting the elements from a list:
         int elementZero = list.get(0); // The number passed as an argument to the function is the index position.
         // Above line gets you the element at index position 0.
