@@ -39,6 +39,6 @@ public class HelloWorld {
         else
             System.out.println(num + " is odd.");
         int difference = hw.subtract(5, 1);
-        System.out.println("The result after you subtract 1 from 5 is " + difference);
+        System.out.println("The difference of 5 - 1 = " + difference);
     }
 }
