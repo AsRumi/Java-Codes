@@ -7,6 +7,9 @@ public class HelloWorld {
     public int add(int a, int b) {
         return a + b;
     }
+    public boolean evenOrOdd(int a) {
+        return a % 2 == 0;
+    }
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         HelloWorld hw = new HelloWorld();
@@ -26,5 +29,11 @@ public class HelloWorld {
         } else
             System.out.println(year + " is not a leap year.");
         System.out.println("Nice code!");
+        System.out.println("Enter a number to check if it is even or odd.");
+        int num = sc.nextInt();
+        if (hw.evenOrOdd(num))
+            System.out.println(num + " is even.");
+        else
+            System.out.println(num + " is odd.");
     }
 }
