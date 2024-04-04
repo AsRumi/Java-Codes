@@ -10,6 +10,9 @@ public class HelloWorld {
     public boolean evenOrOdd(int a) {
         return a % 2 == 0;
     }
+    public int subtract(int a, int b) {
+        return a - b;
+    }
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         HelloWorld hw = new HelloWorld();
@@ -35,5 +38,7 @@ public class HelloWorld {
             System.out.println(num + " is even.");
         else
             System.out.println(num + " is odd.");
+        int difference = hw.subtract(5, 1);
+        System.out.println("5 - 1 = " + difference);
     }
 }
