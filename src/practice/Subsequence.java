@@ -15,7 +15,7 @@ public class Subsequence {
                 {
                     continue;
                 }
-                // If you find a match, increment the value of the previous diagonal position to 1.
+                // If you find a match, add one to the value of the previous diagonal position and store it.
                 if(s1.charAt(i-1)==s2.charAt(j-1))
                 {
                     table[i][j] = table[i-1][j-1]+1;
@@ -30,7 +30,7 @@ public class Subsequence {
         return table[s1.length()][s2.length()];
     }
     public static void main(String[] args) {
-        int answer = longestSubsequence("abcdehoxxxxod", "acehood");
+        int answer = longestSubsequence("abcdehoxxxxod", "acehxod");
         System.out.println(answer);
     }
 }

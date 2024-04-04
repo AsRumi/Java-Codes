@@ -1,5 +1,9 @@
 package leetcode;
 
+// You are given an array of sorted integers, you need to delete the integers that repeat and keep a clean array in the front.
+// Example: Input: [1, 1, 2, 3, 4, 4, 5, 6]
+// Output: [1, 2, 3, 4, 5, 6, _, _] Underscores mean it does not matter what comes in the place of that array.
+
 public class DeleteDuplicate {
     
     public static int removeDuplicates(int[] nums)

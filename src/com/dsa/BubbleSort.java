@@ -4,7 +4,6 @@ public class BubbleSort {
 
     int[] bubbleSort(int[] arr)
     {
-        int steps = 0; // Just to see how many steps were taken.
         int l = arr.length; // Storing the length in a convenient variable.
         int temp; // To swap the values.
         for(int i = 0; i<l; i++)
@@ -13,14 +12,12 @@ public class BubbleSort {
             {
                 if(arr[j]>arr[j+1])
                 {
-                    steps++;
                     temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
             }
         }
-        System.out.print("\nNumber of steps taken: "+steps);
         return arr;
     }
 
