@@ -11,7 +11,7 @@ public class HelloWorld {
         return a % 2 == 0;
     }
     public int subtract(int a, int b) {
-        return a - b;
+        return (a - b);
     }
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -39,6 +39,6 @@ public class HelloWorld {
         else
             System.out.println(num + " is odd.");
         int difference = hw.subtract(5, 1);
-        System.out.println("5 - 1 = " + difference);
+        System.out.println("The result after you subtract 1 from 5 is " + difference);
     }
 }
