@@ -25,5 +25,6 @@ public class HelloWorld {
                 System.out.println(year + " is a leap year.");
         } else
             System.out.println(year + " is not a leap year.");
+        System.out.println("Nice code!");
     }
 }
